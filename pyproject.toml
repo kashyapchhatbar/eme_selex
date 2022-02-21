@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "eme_selex"
+authors = [{name = "Kashyap Chhatbar", email = "kashyap.cc@gmail.com"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+license = {file = "LICENSE"}
+
+[project.urls]
+Home = "https://github.com/kashyapchhatbar/eme_selex"
