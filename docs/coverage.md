@@ -68,4 +68,4 @@ for k in [5,6,7,8,9,10]:
     plt.suptitle(f"Overlap of top 100 abundant {k}-mers")
 ```
 
-When we visualise the overlap of top 100 k-mers for $k \n 5,6,7,8,9,10$, we find that almost all of them are common at varying sequencing coverages.
+When we visualise the overlap of top 100 k-mers for $k \in 5,6,7,8,9,10$, we find that almost all of them are common at varying sequencing coverages.
