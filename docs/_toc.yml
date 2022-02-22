@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: workflow
+chapters:
+- file: visualisation
+- file: top_kmers
+- file: coverage
+- file: Notebook

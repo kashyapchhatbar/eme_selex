@@ -24,4 +24,4 @@ counts, fraction, pfm_models = kf("data/random.fa.gz")
 
 ### Tutorial for HT-SELEX analysis
 
-Jupyter notebooks detailing the usage of ***eme_selex*** and extensive analysis for HT-SELEX are hosted [https://eme_selex_usage.readthedocs.io](https://eme_selex_usage.readthedocs.io)
+Jupyter notebooks detailing the usage of ***eme_selex*** and extensive analysis for HT-SELEX are hosted here [https://eme_selex.readthedocs.io](https://eme_selex.readthedocs.io)

@@ -1,0 +1,7 @@
+jupyter-book
+matplotlib
+numpy
+logomaker
+eme
+pandas
+seaborn
