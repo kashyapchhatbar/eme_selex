@@ -10,18 +10,6 @@ While ***eme_selex*** can be used for general purpose k-mer analysis, motivation
 pip install eme_selex
 ```
 
-## Usage
-
-### Basic Usage
-
-```python
-from eme_selex.eme_selex import kmer_fraction_from_file as kf
-
-# By default, keyword arguments for size of the
-# k-mer is k=5 and the number of PFMs is top=50
-counts, fraction, pfm_models = kf("data/random.fa.gz")
-```
-
-### Tutorial for HT-SELEX analysis
+## Tutorial for HT-SELEX analysis
 
 Jupyter notebooks detailing the usage of ***eme_selex*** and extensive analysis for HT-SELEX are hosted here [https://eme_selex.readthedocs.io](https://eme_selex.readthedocs.io)
