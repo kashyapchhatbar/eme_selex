@@ -62,7 +62,7 @@ fig.show()
 ## Fold change (vs cycle 0) of relatively GC-rich 5-mers
 
 ```{code-cell} ipython3
-:tags: remove-input
+:tags: [remove-input]
 
 melt_fold_change_mean = pd.read_csv("data/melt_fold_change_mean.tsv", sep="\t")
 
