@@ -5,3 +5,5 @@ logomaker
 eme
 pandas
 seaborn
+eme_selex
+plotly
