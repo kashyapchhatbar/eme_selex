@@ -9,5 +9,12 @@ readme = "README.md"
 dynamic = ["version", "description"]
 license = {file = "LICENSE"}
 
+dependencies = [
+	"mmh3",
+	"biopython",
+	"pytest",
+	"testfixtures",
+]
+
 [project.urls]
 Home = "https://github.com/kashyapchhatbar/eme_selex"
