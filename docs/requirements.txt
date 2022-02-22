@@ -7,3 +7,4 @@ seaborn
 eme_selex
 plotly
 upsetplot
+biopython
