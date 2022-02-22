@@ -103,6 +103,7 @@ fig.show()
 
 ```{code-cell} ipython3
 :tags: [remove-input]
+
 fig = px.scatter(melt_fractions_mean[melt_fractions_mean["AT"].isin([3,4,5])], 
                  facet_col="AT", x="cycle_", y="value", color="protein", 
                  error_y="value_std", template='simple_white',
@@ -142,11 +143,6 @@ fig.show()
 
 ```{code-cell} ipython3
 :tags: [remove-input]
-
-import plotly.io as pio
-import plotly.express as px
-import plotly.offline as py
-
 fig = px.scatter(melt_fold_change_mean[(melt_fold_change_mean["AT"].isin([3,4,5])) & (melt_fold_change_mean["cycle"]!=0)], 
                  facet_col="AT", x="cycle_", y="value", color="protein", 
                  error_y="value_std", template='simple_white',
