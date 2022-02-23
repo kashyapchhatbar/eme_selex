@@ -18,7 +18,7 @@ kernelspec:
 
     - [`flexbar`](https://github.com/seqan/flexbar) for quality trimming of sequencing reads
     - [`snakemake`](https://snakemake.readthedocs.io/en/stable/) for workflow management
-    - [`eme_selex`](https://github.com/kashyapchhatbar/every-motif-ever) for kmer abundance
+    - [`eme_selex`](https://github.com/kashyapchhatbar/eme_selex) for kmer abundance
     - [`jupyterlab`](https://jupyter.org/install) for web-based interactive development environment 
     - [`tqdm`](https://tqdm.github.io/) for displaying progress
     - [`pandas`](https://pandas.pydata.org/) for data frame creation and manipulation
