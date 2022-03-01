@@ -23,9 +23,6 @@ import pickle
 from collections import defaultdict
 from eme_selex.sequence import canonical
 
-# create dict for easy lookup of sample metadata
-protein_dict = df["protein"].to_dict()
-cycle_dict = df["cycle"].to_dict()
 df = pd.read_csv("data/metadata.tsv", sep="\t", index_col=7)
 
 _cycle0_libs = df[df["cycle"]==0]["Library"].reset_index().set_index("Library")["SampleName"].to_dict()
@@ -53,6 +50,9 @@ for _i, _j in fractions.items():
         if _i in cycle0_libs.keys():
             fold_change[_i][_k] = _l/fractions[cycle0_libs[_i]][_k]
 
+# create dict for easy lookup of sample metadata
+protein_dict = df["protein"].to_dict()
+cycle_dict = df["cycle"].to_dict()
 
 # function to count the number of As and Ts in the k-mer
 def get_at(x):
