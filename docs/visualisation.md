@@ -33,7 +33,7 @@ for i, j in df["Library"].reset_index()[["Library", "SampleName"]].iterrows():
 
 k = 5
 
-with bz2.open(f"data/results_{k}.pickle", "rb") as iH:
+with open(f"data/results_{k}.pickle", "rb") as iH:
     counts = pickle.load(iH)
     _fractions = pickle.load(iH)
     models = pickle.load(iH)
