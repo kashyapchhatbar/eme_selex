@@ -94,7 +94,8 @@ fig.update_layout(
     hoverlabel=dict(
         bgcolor="white",
         font_size=16,
-    ),    
+    ),
+    yaxis=dict(range=[-0.5,10.5]) 
 )
 fig.show()
 ```
@@ -171,7 +172,8 @@ fig.update_layout(
     hoverlabel=dict(
         bgcolor="white",
         font_size=16,
-    ),    
+    ),
+    yaxis=dict(range=[-0.5,10.5])    
 )
 fig.show()
 ```
