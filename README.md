@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/461916697.svg)](https://zenodo.org/badge/latestdoi/461916697)
+
 # eme_selex
 
 eme_selex (***Every Motif Ever for SELEX Analysis***) is a Python package to perform k-mer abundance analysis in DNA sequences. ***eme_selex*** is developed to perform fast and efficient analysis of short k-mers (tested with k-mers up to length 10). 
