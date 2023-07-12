@@ -23,7 +23,7 @@ import pickle
 from collections import defaultdict
 from eme_selex.sequence import canonical
 
-df = pd.read_csv("data/metadata.tsv", sep="\t", index_col=7)
+df = pd.read_csv("data/metadata.tsv", keep_default_na=False, sep="\t", index_col=7)
 
 _cycle0_libs = df[df["cycle"]==0]["Library"].reset_index().set_index("Library")["SampleName"].to_dict()
 cycle0_libs = {}
@@ -81,9 +81,9 @@ def melt_df(x):
     # add metadata
     melt_df["protein"] = melt_df["variable"].apply(lambda x: protein_dict.get(x, None))    
     melt_df["cycle"] = melt_df["variable"].apply(lambda x: cycle_dict.get(x, None))
-    melt_mean = melt_df.dropna().groupby(
+    melt_mean = melt_df.dropna().drop("variable", axis=1).groupby(
       ["cycle", "protein", "kmer", "AT"]).mean().reset_index()
-    melt_std = melt_df.dropna().groupby(
+    melt_std = melt_df.dropna().drop("variable", axis=1).groupby(
       ["cycle", "protein", "kmer", "AT"]).std().reset_index()
     melt_mean["value_std"] = melt_std["value"]
     melt_mean[["protein_", "cycle_"]] = melt_mean[["protein", "cycle"]].apply(modify_cycle, axis=1)
