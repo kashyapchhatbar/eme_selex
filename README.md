@@ -26,4 +26,4 @@ pip install eme_selex
 
 ## Tutorial for HT-SELEX analysis
 
-Jupyter notebooks detailing the usage of ***eme_selex*** and extensive analysis for HT-SELEX are hosted here [https://eme_selex.readthedocs.io](https://eme_selex.readthedocs.io)
+Jupyter notebooks detailing the usage of ***eme_selex*** and extensive analysis for HT-SELEX are hosted here [https://eme-selex.readthedocs.io](https://eme-selex.readthedocs.io)
